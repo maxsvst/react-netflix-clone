@@ -1,14 +1,22 @@
 import React from "react";
 import "./App.css";
+import Router from "./router/router";
+import LoginScreen from "./components/loginScreen/LoginScreen";
 
-import HomeScreen from "./components/homeScreen/HomeScreen";
+const App = () => {
+  const user = null;
 
-function App() {
   return (
-    <div className="app">
-      <HomeScreen />
-    </div>
+    <>
+      {!user ? (
+        <LoginScreen />
+      ) : (
+        <div className="app">
+          <Router />
+        </div>
+      )}
+    </>
   );
-}
+};
 
 export default App;

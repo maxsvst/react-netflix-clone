@@ -19,7 +19,7 @@ const Row = ({ title, fetchData, isLargeRow = false }) => {
 
   useEffect(() => {
     getMovies();
-  }, []);
+  }, [fetchData]);
 
   return (
     <div className="row">
