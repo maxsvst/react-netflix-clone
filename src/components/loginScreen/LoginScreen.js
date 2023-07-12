@@ -37,7 +37,7 @@ const LoginScreen = () => {
 
             <div className="loginScreen__input">
               <form>
-                <input type="email" placeholder="Emial address" />
+                <input type="email" placeholder="E-mail address" />
                 <button
                   onClick={() => {
                     setSignIn(true);

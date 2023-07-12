@@ -22,11 +22,9 @@
     line-height: 1.30;
     padding-top: 1rem;
     font-size: 0.8rem;
-    min-width: 360px;
+    max-width: 360px;
     height: 80px;
 }
-
-.banner__buttons {}
 
 .banner__button {
     cursor: pointer;
