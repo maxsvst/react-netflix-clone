@@ -10,7 +10,6 @@ const App = () => {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
-
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       if (userAuth) {
@@ -21,11 +20,11 @@ const App = () => {
           })
         );
       } else {
-        dispatch(logout);
+        dispatch(logout());
       }
     });
     return unsubscribe;
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
